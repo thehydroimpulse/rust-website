@@ -2,6 +2,10 @@
 
 Just a quick Node app to get the bones together.
 
+This repository is to discuss and get some new designs for the documentation and home page. 
+
+Have anything to add, discuss, or critique? Open an issue.
+
 # Screenshots
 
 ![Light Brown](https://dl-web.dropbox.com/get/Screenshots/Screenshot%202014-01-11%2002.10.07.png?w=AAC-1RvZRpTB2ktTZ69OjfuLHFLe65Q5Q1vzg8CLqFxZCQ&_subject_uid=6036456)

@@ -39,11 +39,45 @@ pre code {
   color: #333;
   color: inherit;
   background-color: transparent;
+  position: relative;
 }
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
 }
+
+.highlight .banner {
+  position: absolute;
+  top: -17px;
+  height: 30px;
+  width: 98%;
+  color: #fff;
+  background: #7E9096;
+  line-height: 30px;
+  padding-left: 10px;
+  font-family: $code-font-family;
+
+  .fa {
+    font-size: 13px;
+  }
+
+  .cmd {
+    margin-left: 10px;
+  }
+
+  .text {
+    color: #F5E6D1;
+    margin-left: 15px;
+  }
+}
+
+.highlight.has-banner {
+  pre code {
+    display: block;
+    padding-top: 30px;
+  }
+}
+
 .highlight pre {
   margin-bottom: 0;
 }

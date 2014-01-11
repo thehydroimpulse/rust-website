@@ -39,7 +39,14 @@ App.prototype.detectOS = function() {
  */
 
 App.prototype.addCodeBanners = function() {
-
+  $(".highlight pre code").each(function(i, el) {
+    $('<div class="banner">'
+      + '<i class="fa fa-chevron-right"></i>'
+      + '<span class="cmd">rustc</span>'
+      + '<span class="text">hello_world.rs</span>'
+      + '</div>').appendTo(el);
+  });
+  $(".highlight").addClass("has-banner");
 };
 
 /**

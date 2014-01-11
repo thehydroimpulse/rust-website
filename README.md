@@ -19,7 +19,7 @@ Have anything to add, discuss, or critique? Open an issue.
 
 # Home Page
 
-![Light Brown](https://photos-5.dropbox.com/t/0/AADTUgvdeejrJ4RuXaIYV0-TxUUfq_hU8cP7oB5bhzHGZg/12/6036456/png/1024x768/3/1389438000/0/2/Screenshot%202014-01-11%2002.10.07.png/aSey2tyCBhQmTwMMt9or5zHuBBO6v33tsBuLKGvAjM8)
+![Light Brown](https://o.twimg.com/2/proxy.jpg?t=HBgeaHR0cDovL2kuaW1ndXIuY29tL2xHZkNvYXkucG5nFIAoFOwOABYAEgA&s=GtcSQJXY1mNgf2W021m-DWuo-cOkaVs9H2Tnq0K3MOU)
 
 
 # Usage

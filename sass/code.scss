@@ -69,6 +69,16 @@ pre code {
     color: #F5E6D1;
     margin-left: 15px;
   }
+
+  .run {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .run:hover {
+    color: #444;
+  }
 }
 
 .highlight.has-banner {

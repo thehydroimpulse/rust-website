@@ -1,7 +1,8 @@
 header {
   position: relative;
   width: 100%;
-  height: 260px;
+  max-height: 260px;
+
   background: $header-bg-color;
   color: $header-fg-color;
   text-align: center;
@@ -21,15 +22,24 @@ header .top {
     padding-bottom: 4px;
   }
 
+  h1 a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0px 1px #846054;
+  }
+
   h1 span.fn {
     font-family: "Source Code Pro", sans-serif;
   }
 }
 
 header .tag {
+
+
   h2 {
     margin-top: 40px;
-    font-size: 22px;
+    //font-size: 22px; // For Open Sanss
+    font-size: 18px; // For Helvetica Neue
   }
 
   .snippet {
@@ -90,10 +100,59 @@ header nav li {
     color: #eee;
     font-family: "Helvetica", Georgia;
     text-decoration: none;
-    text-shadow: 0px 1px #333;
+    text-shadow: 0px 1px #846054;
   }
 
   &:hover {
     background-color: #333;
+  }
+}
+
+header .version-dropdown {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+  span.type {
+    color: #ddc3ba;
+  }
+
+  span.value {
+    display: inline-block;
+    background: #e2a18a;
+    padding: 5px 20px;
+    position: relative;
+    left: 10px;
+    color: #eee;
+    cursor: pointer;
+  }
+
+  span.value i {
+    position: relative;
+    left: 10px;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    width: 93px;
+    min-height: 50px;
+    background: #e2a18a;
+    left: 68px;
+    top: 35px;
+  }
+
+  .dropdown ul {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .dropdown ul li {
+    margin: 10px 0;
+    width: 100%;
+    list-style: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
   }
 }

@@ -79,13 +79,27 @@ app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
 app.use(app.router);
+
 /**
  * @root
  */
 
 app.get('/', function(req, res)
 {
-  res.render('index');
+  res.render('index', {
+    home: true // Display the download button and stuff.
+  });
+});
+
+/**
+ * @route GET /changelog/:version
+ */
+
+app.get('/changelog/:version', function(req, res)
+{
+  res.render('changelog/show', {
+    version: req.params.version
+  });
 });
 
 /**

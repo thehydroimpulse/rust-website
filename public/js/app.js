@@ -11,7 +11,10 @@ function App() {
     $(".download-button").text('Download For ' + this.os);
   }
 
+  this.version = { dropdown: { active: false }};
+
   this.addCodeBanners();
+  this.versionDropdown();
 }
 
 /**
@@ -23,10 +26,10 @@ function App() {
 App.prototype.detectOS = function() {
   var name=null;
 
-  if (navigator.appVersion.indexOf("Win")!=-1) name="Windows";
-  if (navigator.appVersion.indexOf("Mac")!=-1) name="Mac";
-  if (navigator.appVersion.indexOf("X11")!=-1) name="UNIX";
-  if (navigator.appVersion.indexOf("Linux")!=-1) name="Linux";
+  if (navigator.appVersion.indexOf("Win") !=-1) name="Windows";
+  if (navigator.appVersion.indexOf("Mac") !=-1) name="Mac";
+  if (navigator.appVersion.indexOf("X11") !=-1) name="UNIX";
+  if (navigator.appVersion.indexOf("Linux") !=-1) name="Linux";
 
   return name;
 };
@@ -36,6 +39,31 @@ App.prototype.detectOS = function() {
  */
 
 App.prototype.addCodeBanners = function() {
+
+};
+
+/**
+ * Version dropdown
+ */
+
+App.prototype.versionDropdown = function() {
+  var self = this;
+
+  $(".version-dropdown .value").click(function(event) {
+    event.stopPropagation();
+
+    if (self.version.dropdown.active) {
+      $(".version-dropdown .dropdown").hide();
+      self.version.dropdown.active = false;
+      $(".version-dropdown i").removeClass("fa-angle-up");
+      $(".version-dropdown i").addClass("fa-angle-down");
+    } else {
+      $(".version-dropdown .dropdown").show();
+      self.version.dropdown.active = true;
+      $(".version-dropdown i").removeClass("fa-angle-down");
+      $(".version-dropdown i").addClass("fa-angle-up");
+    }
+  });
 
 };
 

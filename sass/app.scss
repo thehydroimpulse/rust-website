@@ -1,4 +1,4 @@
-$font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 $font-size: 17px;
 $font-color: #333;
 
@@ -39,3 +39,4 @@ $code-font-family: Menlo, Monaco, "Courier New", monospace;
 @import "body";
 @import "header";
 @import "code";
+@import "changelog";

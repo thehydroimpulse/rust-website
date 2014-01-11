@@ -2,10 +2,11 @@
 <html>
 <head>
   <title>The Rust Programming Language</title>
-  <script type="text/javascript" src="//use.typekit.net/bww1exk.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!--<script type="text/javascript" src="//use.typekit.net/bww1exk.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
   <!--<link href='http://fonts.googleapis.com/css?family=PT+Sans|Open+Sans:400,300' rel='stylesheet' type='text/css'>-->
   <link rel="stylesheet" href="/public/css/normalize.css" />
+  <link rel="stylesheet" href="/public/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/public/css/app.css" />
 
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -16,34 +17,46 @@
 <body>
   <div class="wrapper">
     <header>
+      <section class="version-dropdown">
+        <span class="type">Version</span>
+        <span class="value">0.9.0 <i class="fa fa-angle-down"></i></span>
+        <section class="dropdown">
+          <ul>
+            <li>0.8.0</li>
+            <li>0.7.0</li>
+          </ul>
+        </section>
+      </section>
       <section class="top">
         <nav>
           <ul>
-            <li class="docs"><a href="#">Docs</a></li>
-            <li class="tutorial"><a href="#">Tutorial</a></li>
-            <li class="github"><a href="#">Github</a></li>
+            <li class="docs"><a href="/docs">Docs</a></li>
+            <li class="tutorial"><a href="/tutorial">Tutorial</a></li>
+            <li class="github"><a href="https://github.com/mozilla/rust">Github</a></li>
           </ul>
         </nav>
-        <h1>Rust</h1>
+        <h1><a href="/">Rust</a></h1>
       </section>
-      <section class="tag">
-        <h2>A safe, concurrent, practical programming language.</h2>
-      </section>
-      <section class="download">
-        <button class="download-button">
-          Download For
-        </button>
-      </section>
-      <section class="version">
-        <a href="/changelog/0.9.0" title="Changelog">v0.9.0</a>
-      </section>
+      {{#if home}}
+        <section class="tag">
+          <h2>A safe, concurrent, practical programming language.</h2>
+        </section>
+        <section class="download">
+          <button class="download-button">
+            Download For
+          </button>
+        </section>
+        <section class="version">
+          <a href="/changelog/0.9.0" title="Changelog">v0.9.0</a>
+        </section>
+      {{/if}}
     </header>
     <section class="content">
       {{{body}}}
     </section>
   </div>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="/public/js/jquery.min.js"></script>
   <script type="text/javascript" src="/public/js/app.js"></script>
 </body>
 </html>

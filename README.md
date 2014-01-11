@@ -19,7 +19,7 @@ Have anything to add, discuss, or critique? Open an issue.
 
 # Home Page
 
-![Light Brown](https://o.twimg.com/2/proxy.jpg?t=HBgeaHR0cDovL2kuaW1ndXIuY29tL2xHZkNvYXkucG5nFIAoFOwOABYAEgA&s=GtcSQJXY1mNgf2W021m-DWuo-cOkaVs9H2Tnq0K3MOU)
+![Light Brown](https://raw.github.com/TheHydroImpulse/rust-website/master/img/home.png)
 
 
 # Usage

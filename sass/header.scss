@@ -1,0 +1,103 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background: $header-bg-color;
+  color: $header-fg-color;
+  text-align: center;
+  border-bottom: 2px solid $header-border-dark;
+}
+
+
+header h1 {
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  font-size: 35px;
+  //text-shadow: 1px 0px #333;
+  padding-bottom: 4px;
+}
+
+header .top {
+  border-bottom: 1px dashed $header-border-light;
+  padding-bottom: 15px;
+}
+
+header .tag h2 {
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+header .tag .snippet {
+  margin: 30px 0px;
+  display: inline-block;
+}
+
+header .download button {
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+  padding: 12px 30px;
+  margin: 20px 0;
+  border-bottom: 2px solid $header-download-border;
+
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+header .download button:hover {
+  border-color: $header-download-border-hover;
+}
+
+header .version {
+  text-align: center;
+  color: #a67d79;
+  //color: #748c96; // blue gray
+  font-size: 15px;
+  position: relative;
+  top: -8px;
+}
+
+header h1 span.fn {
+  font-family: "Source Code Pro", sans-serif;
+}
+
+header nav {
+  padding-left: 0px;
+  //border-left: 1px solid #8b81d4;
+  position: absolute;
+  right: 10px;
+  float: right;
+  height: 50px;
+  top: 8px;
+  line-height: 0px;
+  margin-right: 20px;
+}
+
+header nav li {
+  $bg: #a07ded;
+  $bc: #8666cd;
+  position: relative;
+  top: -10px;
+  list-style: none;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 20px 15px;
+  border-radius: 5px;
+  //background: $bg;
+  //border-bottom: 2px solid $bc;
+}
+
+header nav li a {
+  color: #eee;
+  font-family: "Helvetica", Georgia;
+  text-decoration: none;
+  text-shadow: 0px 1px #333;
+}
+
+header nav li:hover {
+  background-color: #333;
+}

@@ -1,0 +1,33 @@
+$font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$font-size: 17px;
+$font-color: #333;
+
+/**
+ * Header
+ */
+
+$header-bg-color: #776dc0; // purple
+$header-bg-color: #d7625f; // ligh red/pink
+$header-bg-color: #d24e4b; // darker red
+$header-bg-color: #673a39; // dark brown
+$header-bg-color: #42565E; // blue gray
+$header-bg-color: #874c46; // normal brown
+
+$header-border-light: #9d5952;
+$header-border-dark: #6a3c38;
+
+$header-download-border: #5fd7cd;
+$header-download-border-hover: #699db5;
+
+$header-fg-color: #fff;
+
+/**
+ * Code
+ */
+
+$code-font-size: 16px;
+$code-font-family: Menlo, Monaco, "Courier New", monospace;
+
+@import "body";
+@import "header";
+@import "code";

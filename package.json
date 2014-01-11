@@ -1,0 +1,11 @@
+{
+  "name": "rust-website",
+  "version": "0.0.1",
+  "author": "Daniel Fagnan",
+  "dependencies": {
+    "marked": "*",
+    "express": "~3.4.7",
+    "express-hbs": "~0.5.2",
+    "pygmentize-bundled": "~2.1.0"
+  }
+}

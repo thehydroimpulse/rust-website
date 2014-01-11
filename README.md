@@ -8,7 +8,7 @@ Have anything to add, discuss, or critique? Open an issue.
 
 # Screenshots
 
-![Light Brown](https://dl-web.dropbox.com/get/Screenshots/Screenshot%202014-01-11%2002.10.07.png?w=AAC-1RvZRpTB2ktTZ69OjfuLHFLe65Q5Q1vzg8CLqFxZCQ&_subject_uid=6036456)
+![Light Brown](https://photos-5.dropbox.com/t/0/AADTUgvdeejrJ4RuXaIYV0-TxUUfq_hU8cP7oB5bhzHGZg/12/6036456/png/1024x768/3/1389438000/0/2/Screenshot%202014-01-11%2002.10.07.png/aSey2tyCBhQmTwMMt9or5zHuBBO6v33tsBuLKGvAjM8)
 
 
 # Usage

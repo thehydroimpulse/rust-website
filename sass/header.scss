@@ -52,9 +52,9 @@ header .download button:hover {
   border-color: $header-download-border-hover;
 }
 
-header .version {
+header .version a {
   text-align: center;
-  color: #a67d79;
+  color: $version-link-fg;
   //color: #748c96; // blue gray
   font-size: 15px;
   position: relative;

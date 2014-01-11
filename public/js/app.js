@@ -10,6 +10,8 @@ function App() {
   if (this.os) {
     $(".download-button").text('Download For ' + this.os);
   }
+
+  this.addCodeBanners();
 }
 
 /**
@@ -33,7 +35,7 @@ App.prototype.detectOS = function() {
  * Add a `rust` banner for each code snippet.
  */
 
-App.prototype.codeBanner = function() {
+App.prototype.addCodeBanners = function() {
 
 };
 

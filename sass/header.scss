@@ -8,30 +8,36 @@ header {
   border-bottom: 2px solid $header-border-dark;
 }
 
-
-header h1 {
-  display: inline-block;
-  position: relative;
-  top: 15px;
-  font-size: 35px;
-  //text-shadow: 1px 0px #333;
-  padding-bottom: 4px;
-}
-
 header .top {
   border-bottom: 1px dashed $header-border-light;
   padding-bottom: 15px;
+
+  h1 {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-size: 35px;
+    //text-shadow: 1px 0px #333;
+    padding-bottom: 4px;
+  }
+
+  h1 span.fn {
+    font-family: "Source Code Pro", sans-serif;
+  }
 }
 
-header .tag h2 {
-  margin-top: 40px;
-  font-size: 22px;
+header .tag {
+  h2 {
+    margin-top: 40px;
+    font-size: 22px;
+  }
+
+  .snippet {
+    margin: 30px 0px;
+    display: inline-block;
+  }
 }
 
-header .tag .snippet {
-  margin: 30px 0px;
-  display: inline-block;
-}
 
 header .download button {
   border: none;
@@ -46,28 +52,22 @@ header .download button {
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-}
 
-header .download button:hover {
-  border-color: $header-download-border-hover;
+  &:hover {
+    border-color: $header-download-border-hover;
+  }
 }
 
 header .version a {
   text-align: center;
   color: $version-link-fg;
-  //color: #748c96; // blue gray
   font-size: 15px;
   position: relative;
   top: -8px;
 }
 
-header h1 span.fn {
-  font-family: "Source Code Pro", sans-serif;
-}
-
 header nav {
   padding-left: 0px;
-  //border-left: 1px solid #8b81d4;
   position: absolute;
   right: 10px;
   float: right;
@@ -78,8 +78,6 @@ header nav {
 }
 
 header nav li {
-  $bg: #a07ded;
-  $bc: #8666cd;
   position: relative;
   top: -10px;
   list-style: none;
@@ -87,17 +85,15 @@ header nav li {
   display: inline-block;
   padding: 20px 15px;
   border-radius: 5px;
-  //background: $bg;
-  //border-bottom: 2px solid $bc;
-}
 
-header nav li a {
-  color: #eee;
-  font-family: "Helvetica", Georgia;
-  text-decoration: none;
-  text-shadow: 0px 1px #333;
-}
+  a {
+    color: #eee;
+    font-family: "Helvetica", Georgia;
+    text-decoration: none;
+    text-shadow: 0px 1px #333;
+  }
 
-header nav li:hover {
-  background-color: #333;
+  &:hover {
+    background-color: #333;
+  }
 }

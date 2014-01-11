@@ -4,11 +4,6 @@
 /**
  * Code
  */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
 html {
   line-height: 1.5; }
 
@@ -27,7 +22,9 @@ body {
 @media (min-width: 38rem) {
   html {
     font-size: 20px; } }
-/* Headings */
+/**
+ * Headings
+ */
 h1, h2, h3, h4, h5, h6 {
   font-family: "freight-sans-pro", Verdana, Geneva, sans-serif;
   margin-bottom: .5rem;
@@ -56,26 +53,23 @@ h4, h5, h6 {
   font-family: "PT Serif", Georgia;
   margin: 40px auto;
   width: 60%;
-  font-size: 16px; }
-
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-  text-align: center; }
-.content hr {
-  width: 60%;
-  margin: 1em auto;
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #eee;
-  padding: 0;
-  margin-bottom: 2em; }
+  font-size: 16px;
+  max-width: 28rem; }
+  .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    text-align: center; }
+  .content hr {
+    width: 60%;
+    margin: 1em auto;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 0;
+    margin-bottom: 2em; }
 
 @media (min-width: 56rem) {
   .content {
     max-width: 38rem; } }
-.content {
-  max-width: 28rem; }
-
 @media (min-width: 38rem) {
   .content {
     max-width: 32rem; } }
@@ -88,21 +82,21 @@ header {
   text-align: center;
   border-bottom: 2px solid #a37a6b; }
 
-header h1 {
-  display: inline-block;
-  position: relative;
-  top: 15px;
-  font-size: 35px;
-  padding-bottom: 4px; }
-
 header .top {
   border-bottom: 1px dashed #cc9987;
   padding-bottom: 15px; }
+  header .top h1 {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-size: 35px;
+    padding-bottom: 4px; }
+  header .top h1 span.fn {
+    font-family: "Source Code Pro", sans-serif; }
 
 header .tag h2 {
   margin-top: 40px;
   font-size: 22px; }
-
 header .tag .snippet {
   margin: 30px 0px;
   display: inline-block; }
@@ -119,9 +113,8 @@ header .download button {
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
-
-header .download button:hover {
-  border-color: #699db5; }
+  header .download button:hover {
+    border-color: #699db5; }
 
 header .version a {
   text-align: center;
@@ -129,9 +122,6 @@ header .version a {
   font-size: 15px;
   position: relative;
   top: -8px; }
-
-header h1 span.fn {
-  font-family: "Source Code Pro", sans-serif; }
 
 header nav {
   padding-left: 0px;
@@ -151,15 +141,13 @@ header nav li {
   display: inline-block;
   padding: 20px 15px;
   border-radius: 5px; }
-
-header nav li a {
-  color: #eee;
-  font-family: "Helvetica", Georgia;
-  text-decoration: none;
-  text-shadow: 0px 1px #333; }
-
-header nav li:hover {
-  background-color: #333; }
+  header nav li a {
+    color: #eee;
+    font-family: "Helvetica", Georgia;
+    text-decoration: none;
+    text-shadow: 0px 1px #333; }
+  header nav li:hover {
+    background-color: #333; }
 
 /* Code */
 code,

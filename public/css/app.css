@@ -598,3 +598,48 @@ header .download button {
   transition: all 1s ease-in-out; }
   header .download button:hover {
     border-color: #9c66ff; }
+
+.sidebar {
+  width: 210px;
+  position: fixed;
+  float: left;
+  height: 100%;
+  background: #42565E;
+  border-right: 2px solid #555;
+  color: #fff;
+  padding-top: 20px;
+  font-family: "Open Sans"; }
+  .sidebar h1 {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 30px;
+    color: #b2bdc2;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #587783; }
+  .sidebar .option {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 8px 1px;
+    font-size: 20px;
+    background: #7E9096;
+    cursor: pointer; }
+  .sidebar .option i {
+    float: right;
+    line-height: 30px;
+    position: relative;
+    right: 10px;
+    font-size: 25px; }
+  .sidebar .modules {
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 30px; }
+  .sidebar ul li {
+    list-style: none;
+    padding: 10px 10px;
+    font-size: 18px; }
+  .sidebar li a {
+    color: #eee;
+    text-decoration: none; }

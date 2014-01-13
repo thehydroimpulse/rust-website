@@ -108,6 +108,14 @@ app.get('/changelog/:version', function(req, res)
 });
 
 /**
+ * @route GET /docs
+ */
+
+app.get('/docs', function(req, res) {
+  res.render('docs/index');
+});
+
+/**
  * Listen
  */
 

@@ -19,7 +19,7 @@ Have anything to add, discuss, or critique? Open an issue.
 
 # Home Page
 
-![Light Brown](https://raw.github.com/TheHydroImpulse/rust-website/master/img/home.png)
+![Light Brown](https://raw.github.com/TheHydroImpulse/rust-website/master/img/home-2.png)
 
 # Usage
 

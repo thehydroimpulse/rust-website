@@ -168,11 +168,10 @@ header li.docs {
     border-radius: 4px;
     opacity: 1;
     z-index: 10;
-    width: 130px;
     background: #333;
     min-width: 100px;
-    padding: 8px 0;
-    padding-top: 35px;
+    padding: 0px 0;
+    padding-top: 30px;
     border: none;
     -webkit-transform: scale(0.5) translateX(-50%);
     -ms-transform: scale(0.5) translateX(-50%);
@@ -188,6 +187,8 @@ header li.docs {
       text-shadow: none;
       color: #fff;
       font-size: 16px; }
+    header li.docs .sub a:hover {
+      text-decoration: underline; }
   header li.docs .sub:before {
     content: '';
     display: block;

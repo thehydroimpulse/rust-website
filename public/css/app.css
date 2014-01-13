@@ -156,6 +156,59 @@ header nav li {
   header nav li:hover {
     background-color: #333; }
 
+header li.docs {
+  position: relative; }
+  header li.docs:hover {
+    background: none; }
+  header li.docs .sub {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 50%;
+    border-radius: 4px;
+    opacity: 1;
+    z-index: 10;
+    width: 130px;
+    background: #333;
+    min-width: 100px;
+    padding: 8px 0;
+    padding-top: 35px;
+    border: none;
+    -webkit-transform: scale(0.5) translateX(-50%);
+    -ms-transform: scale(0.5) translateX(-50%);
+    transform: scale(0.5) translateX(-50%);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: all 400ms cubic-bezier(0.24, 0.22, 0.015, 1.56), opacity 100ms linear;
+    transition: all 400ms cubic-bezier(0.24, 0.22, 0.015, 1.56), opacity 100ms linear; }
+    header li.docs .sub a {
+      display: block;
+      margin-bottom: 30px;
+      text-shadow: none;
+      color: #fff;
+      font-size: 16px; }
+  header li.docs .sub:before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #333333 rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: -5px; }
+
+header li.docs.open .sub {
+  display: block;
+  -webkit-transform: scale(1) translateX(-50%);
+  -ms-transform: scale(1) translateX(-50%);
+  transform: scale(1) translateX(-50%);
+  opacity: 1;
+  z-index: 10; }
+
 header .version-dropdown {
   position: absolute;
   left: 20px;

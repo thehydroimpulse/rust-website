@@ -15,6 +15,7 @@ function App() {
 
   this.addCodeBanners();
   this.versionDropdown();
+  this.hover();
 }
 
 /**
@@ -73,6 +74,33 @@ App.prototype.versionDropdown = function() {
     }
   });
 
+};
+
+/**
+ * "Docs" hover
+ */
+
+App.prototype.hover = function() {
+  $("li.docs").hover(function(event) {
+    var el = event.target;
+    if (el.classList.contains('open')) return;
+    el.classList.add('open');
+    /**setTimeout(function(){
+      $("body").hover(function end(click) {
+        console.log(123);
+        if(click.target === el) return;
+        el.classList.remove('open');
+        $("body").unbind('click', end);
+      });
+    }, 0);**/
+  }, function(event) {
+    var el = event.target.parentNode;
+    console.log(el, el.tagName);
+    if (el.tagName === 'UL') {
+      $(el).find(".docs").removeClass('open');
+    }
+    el.classList.remove('open');
+  });
 };
 
 /**

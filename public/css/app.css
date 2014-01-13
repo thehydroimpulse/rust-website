@@ -51,7 +51,7 @@ h4, h5, h6 {
 
 .content {
   font-family: "Open Sans", "Helvetica Neue", Georgia;
-  margin: 40px auto;
+  margin: 90px auto;
   width: 60%;
   font-size: 16px;
   max-width: 28rem; }
@@ -66,6 +66,11 @@ h4, h5, h6 {
     border-top: 1px solid #eee;
     padding: 0;
     margin-bottom: 2em; }
+  .content .block {
+    font-size: 19px;
+    font-weight: 400; }
+    .content .block p {
+      line-height: 1.5; }
 
 @media (min-width: 56rem) {
   .content {
@@ -74,13 +79,15 @@ h4, h5, h6 {
   .content {
     max-width: 32rem; } }
 header {
+  min-width: 680px;
   position: relative;
   width: 100%;
-  max-height: 260px;
+  max-height: 380px;
   background: #b58777;
   color: white;
   text-align: center;
-  border-bottom: 2px solid #a37a6b; }
+  border-bottom: 2px solid #a37a6b;
+  padding-bottom: 10px; }
 
 header .top {
   border-bottom: 1px dashed #cc9987;
@@ -100,29 +107,25 @@ header .top {
 
 header .tag h2 {
   margin-top: 40px;
-  font-size: 18px; }
+  font-size: 19px;
+  font-family: "Open Sans";
+  text-shadow: 0px 1px #846054;
+  font-weight: 400; }
 header .tag .snippet {
   margin: 30px 0px;
   display: inline-block; }
 
-header .download button {
-  border: none;
-  outline: none;
-  background: #333;
-  color: #fff;
-  padding: 12px 30px;
-  margin: 20px 0;
-  border-bottom: 2px solid #5fd7cd;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
-  header .download button:hover {
-    border-color: #699db5; }
+header .code {
+  width: 600px;
+  margin: 30px auto;
+  position: relative; }
+  header .code .banner {
+    top: -20px; }
 
 header .version a {
+  display: block;
   text-align: center;
-  color: #d5bdb4;
+  color: #333333;
   font-size: 15px;
   position: relative;
   top: -8px; }
@@ -139,7 +142,7 @@ header nav {
 
 header nav li {
   position: relative;
-  top: -10px;
+  top: -5px;
   list-style: none;
   margin-right: 10px;
   display: inline-block;
@@ -526,3 +529,18 @@ pre code {
   margin: 40px auto; }
   .changelog h3 {
     text-align: left; }
+
+header .download button {
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+  padding: 12px 30px;
+  margin: 20px 0;
+  border-bottom: 2px solid #5fd7cd;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  header .download button:hover {
+    border-color: #9c66ff; }

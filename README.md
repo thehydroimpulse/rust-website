@@ -21,7 +21,6 @@ Have anything to add, discuss, or critique? Open an issue.
 
 ![Light Brown](https://raw.github.com/TheHydroImpulse/rust-website/master/img/home.png)
 
-
 # Usage
 
 All the styles are written in Sass. To quickly do a one-off build:

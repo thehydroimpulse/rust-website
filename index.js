@@ -46,6 +46,11 @@ renderer.code = function(code, lang) {
 
 /**
  * Markdown
+ *
+ * XXX: There's currently a bug in the markdown processing in combination
+ *      with layouts. If there's a `markdown` block in the layout AND in
+ *      a template, the layout block will be replaced with garbage characters,
+ *      while the templates will be rendered correctly.
  */
 
 hbs.registerAsyncHelper('markdown', function(options, fn) {

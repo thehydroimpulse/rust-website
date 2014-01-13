@@ -1,6 +1,6 @@
 .content {
   font-family: "Open Sans", "Helvetica Neue", Georgia;
-  margin: 40px auto;
+  margin: 90px auto;
   width: 60%;
   font-size: 16px;
   max-width: 28rem;
@@ -18,6 +18,14 @@
     border-top: 1px solid #eee;
     padding: 0;
     margin-bottom: 2em;
+  }
+
+  .block {
+    font-size: 19px;
+    font-weight: 400;
+    p {
+      line-height: 1.5;
+    }
   }
 }
 

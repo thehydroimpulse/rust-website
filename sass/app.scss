@@ -18,13 +18,13 @@ $header-bg-color: #B58777; // light brown.
 $header-border-light: #cc9987;
 $header-border-dark: #a37a6b;
 
-$version-link-fg: #d5bdb4;
+$version-link-fg: #333;
 
 //$header-border-light: #9d5952;
 //$header-border-dark: #6a3c38;
 
 $header-download-border: #5fd7cd;
-$header-download-border-hover: #699db5;
+$header-download-border-hover: #9c66ff;
 
 $header-fg-color: #fff;
 
@@ -40,3 +40,4 @@ $code-font-family: Menlo, Monaco, "Courier New", monospace;
 @import "header";
 @import "code";
 @import "changelog";
+@import "download";

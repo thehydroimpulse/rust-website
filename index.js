@@ -139,6 +139,7 @@ app.post('/exec', function(req, res) {
     code
   ].join(' '), function(error, stdout, stderr) {
     if (error || stderr) {
+      console.log(error || stderr);
       return res.send(500);
     }
 

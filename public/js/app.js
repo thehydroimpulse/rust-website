@@ -16,6 +16,12 @@ function App() {
   this.addCodeBanners();
   this.versionDropdown();
   this.hover();
+
+  $.post('/exec', {
+    code: 'fn main() { println("Hello World!"); }'
+  }, function(data) {
+    console.log(data);
+  }, 'json');
 }
 
 /**

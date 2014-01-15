@@ -8,6 +8,7 @@ var hbs       = require('express-hbs');
 var marked    = require('marked');
 var highlight = require('pygmentize-bundled');
 var renderer  = new marked.Renderer();
+var exec      = require('child_process').exec;
 
 /**
  * Marked
@@ -113,6 +114,38 @@ app.get('/changelog/:version', function(req, res)
 
 app.get('/docs', function(req, res) {
   res.render('docs/index');
+});
+
+/**
+ * @route POST /exec
+ */
+
+app.post('/exec', function(req, res) {
+  var code = req.body.code;
+
+  if (!code) res.send(500);
+
+  // Execute the code:
+  exec([
+    'playpen',
+    'root-master',
+    '--user=rust',
+    '--timeout=5',
+    '--syscalls-file=whitelist',
+    '--devices=c:1:9',
+    '--memory-limit=128M',
+    '--',
+    './evaluate.sh',
+    code
+  ].join(' '), function(error, stdout, stderr) {
+    if (error || stderr) {
+      return res.send(500);
+    }
+
+    res.send(200, {
+      result: stdout.toString('utf-8')
+    });
+  });
 });
 
 /**

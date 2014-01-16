@@ -1,2 +1,4 @@
 node_modules/
 docs/
+.vagrant
+root-master

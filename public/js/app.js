@@ -17,11 +17,11 @@ function App() {
   this.versionDropdown();
   this.hover();
 
-  $.post('/exec', {
+  /**$.post('/exec', {
     code: 'fn main() { println("Hello World!"); }'
   }, function(data) {
     console.log(data);
-  }, 'json');
+  }, 'json');**/
 }
 
 /**
@@ -91,17 +91,8 @@ App.prototype.hover = function() {
     var el = event.target;
     if (el.classList.contains('open')) return;
     el.classList.add('open');
-    /**setTimeout(function(){
-      $("body").hover(function end(click) {
-        console.log(123);
-        if(click.target === el) return;
-        el.classList.remove('open');
-        $("body").unbind('click', end);
-      });
-    }, 0);**/
   }, function(event) {
     var el = event.target.parentNode;
-    console.log(el, el.tagName);
     if (el.tagName === 'UL') {
       $(el).find(".docs").removeClass('open');
     }

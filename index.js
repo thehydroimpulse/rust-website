@@ -125,9 +125,8 @@ app.post('/exec', function(req, res) {
 
   if (!code) res.send(500);
 
-  // Execute the code:
-  exec([
-    'playpen',
+  var cmd = [
+    './deps/playpen/playpen',
     'root-master',
     '--user=rust',
     '--timeout=5',
@@ -135,9 +134,13 @@ app.post('/exec', function(req, res) {
     '--devices=c:1:9',
     '--memory-limit=128M',
     '--',
-    './evaluate.sh',
-    code
-  ].join(' '), function(error, stdout, stderr) {
+    './evaluate.sh "fn main() {}"'
+  ].join(' ');
+
+  console.log(cmd);
+
+  // Execute the code:
+  exec(cmd, function(error, stdout, stderr) {
     if (error || stderr) {
       console.log(error || stderr);
       return res.send(500);

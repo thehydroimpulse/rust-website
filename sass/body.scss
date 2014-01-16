@@ -21,10 +21,32 @@
   }
 
   .block {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 1.7;
     p {
-      line-height: 1.5;
+      line-height: 1.7;
+    }
+  }
+
+  .backing {
+    height: 70px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+    margin: 12px 0;
+    margin-bottom: 20px;
+
+    span {
+      position: relative;
+      top: -19px;
+      font-family: "Helvetica Neue";
+    }
+
+    a {
+      display: inline-block;
+      line-height: 70px;
     }
   }
 }

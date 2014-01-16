@@ -4,6 +4,8 @@ Just a quick Node app to get the bones together.
 
 The goal of this repository is to get together and start improving the current Rust home page, documentation and tutorial sections. Having a solid, clean website can be a huge advantage to language adoption. It makes it easier for people to learn it.
 
+![Light Brown](https://raw.github.com/TheHydroImpulse/rust-website/master/img/home-3.png)
+
 Thus, our goals are many:
 
 * Make it dead-simple to install Rust. The details on getting Rust's compiler to this point might not happen right away, but making thinking about and designing it in, will help.
@@ -16,10 +18,6 @@ As far as the documentation, here are some ideas:
 * A consistent sidebar (left-hand) that shows the current context with ways on going back.
 
 Have anything to add, discuss, or critique? Open an issue.
-
-# Home Page
-
-![Light Brown](https://raw.github.com/TheHydroImpulse/rust-website/master/img/home-2.png)
 
 # Usage
 

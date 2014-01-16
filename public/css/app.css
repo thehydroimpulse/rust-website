@@ -67,10 +67,26 @@ h4, h5, h6 {
     padding: 0;
     margin-bottom: 2em; }
   .content .block {
-    font-size: 19px;
-    font-weight: 400; }
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7; }
     .content .block p {
-      line-height: 1.5; }
+      line-height: 1.7; }
+  .content .backing {
+    height: 70px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+    margin: 12px 0;
+    margin-bottom: 20px; }
+    .content .backing span {
+      position: relative;
+      top: -19px;
+      font-family: "Helvetica Neue"; }
+    .content .backing a {
+      display: inline-block;
+      line-height: 70px; }
 
 @media (min-width: 56rem) {
   .content {
